@@ -1,25 +1,29 @@
 import React from 'react';
-import logo from './logo.svg';
+import User from './components/User'
+import SearchRequest from './components/SearchRequest'
+import SearchResults from './components/SearchResults';
+import SingleItem from './components/SingleItem';
+import SavedResults from './components/SavedResults'
+import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import './App.css';
 
 function App() {
   return (
+    <BrowserRouter>
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Switch>
+
+        {/* <Route path='/' exact component={User} /> */}
+        <Route path='/search' component={SearchRequest} />
+        {/* <Route path='/results' component={SearchResults} />
+        <Route path='/results/:id' component={SingleItem} />
+        <Route path='/saved' component={SavedResults} /> */}
+
+      </Switch>
+      
     </div>
+    
+    </BrowserRouter>
   );
 }
 
