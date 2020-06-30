@@ -1,0 +1,39 @@
+.jumbo-background {
+    background: rgb(131,58,180);
+    background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(29,196,253,1) 50%, rgba(252,176,69,1) 100%);
+    border-radius: 0;
+    height: 100vh;
+}
+
+.card {
+    border: 1px solid #1dc4fd;
+    margin-top: 15px;
+}
+
+.card-title {
+    border: 1px solid #fcb045;
+    width: 100%;
+    height: 100%;
+    border-radius: 2px;
+}
+
+.title-container {
+    width: 60%;
+    margin: auto;
+    border: none;
+}
+
+.card-text {
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    border: 1px solid #fcb045;
+}
+
+.text-container {
+    border: none;
+}
+
+.card-button {
+    color:#fcb045;
+}

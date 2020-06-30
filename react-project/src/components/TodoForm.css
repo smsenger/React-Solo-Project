@@ -1,0 +1,54 @@
+* {
+    font-family: 'Oswald', sans-serif;
+}
+
+.jumbo-background {
+    background: rgb(131,58,180);
+    background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(29,196,253,1) 50%, rgba(252,176,69,1) 100%);
+    border-radius: 0;
+}
+
+.app-title {
+    font-size: 60px;
+}
+
+.app-subtitle {
+    font-size: 30px;
+}
+
+.app-link {
+    margin: 10px;
+    font-size: 25px;
+}
+
+.form-field {
+    display: flex;
+    margin-left: 270px;
+}
+
+.button {
+    color: #fcb045;
+    border-radius: 2px;
+    padding-right: 7px;
+    padding-left: 7px;
+}
+
+
+.input {
+    border-radius: 2px;
+    border: 1px solid #fcb045;
+    margin-left: 5px;
+    width: 400px;
+    height: 47px;
+    color: #fcb045;
+}
+
+#checkbox {
+    border: 1px solid #fcb045;
+}
+
+.form-label {
+    color: #fcb045;
+    font-size: 40px;
+    margin-top: 20px;
+}

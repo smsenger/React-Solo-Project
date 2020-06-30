@@ -1,0 +1,42 @@
+* {
+    font-family: 'Oswald', sans-serif;
+}
+
+.jumbo-background {
+    background: rgb(131,58,180);
+    background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(29,196,253,1) 50%, rgba(252,176,69,1) 100%);
+    border-radius: 0;
+}
+
+.app-title {
+    font-size: 60px;
+}
+
+.app-subtitle {
+    font-size: 30px;
+}
+
+.app-link {
+    margin: 10px;
+    font-size: 25px;
+    color: #fcb045;
+}
+
+.search-title {
+    font-size: 26px;
+    color: #fcb045;
+}
+
+.form-div {
+    display: flex;
+    width: 80%;
+    margin: auto;
+}
+
+.news-input {
+    border: 1px solid #1dc4fd;
+}
+
+.news-button {
+    color:#fcb045;
+}

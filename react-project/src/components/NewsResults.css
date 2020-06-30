@@ -1,0 +1,33 @@
+* {
+    font-family: 'Oswald', sans-serif;
+}
+
+.app-title {
+    font-size: 60px;
+}
+
+.app-subtitle {
+    font-size: 30px;
+}
+
+.app-link {
+    margin: 10px;
+    font-size: 25px;
+}
+
+.card {
+    border: 1px solid #1dc4fd;
+    margin-top: 15px;
+}
+
+.card-title {
+    font-size: 18px;
+}
+
+.card-name {
+    font-size: 15px;
+}
+
+.card-body {
+    font-size: 13px;
+}
