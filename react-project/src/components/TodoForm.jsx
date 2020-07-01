@@ -34,33 +34,35 @@ class TodoForm extends Component {
         return (
             <div>
                 <Jumbotron className="jumbo-background">
-                    <h1 className="app-title">One Stop Todos</h1>
+                    <h1 className="app-title"><i>One_Stop</i> Todos</h1>
                     <p>
                         <Link className="app-link" to='/' variant="primary">Home</Link>
                         <Link className="app-link" to="/searchrequest" variant="primary">News</Link>
                         <Link className="app-link" to='/notes' variant="primary">Notes</Link>
                     </p>
-                <Form onSubmit={this.handleSubmit}>
+                    <Form onSubmit={this.handleSubmit}>
                         <Form.Label htmlFor="todo" className="form-label">
                             Enter A Task
-          </Form.Label>
-                    <div className="form-field">
-                        <Form.Control
-                            type="text"
-                            id="todo"
-                            name="todo"
-                            className="input"
-                            value={this.state.value}
-                            onChange={e => {
-                                this.updateState(e, 'value');
-                            }}></Form.Control>
-
-                        <Button className="button" type="submit" >
-                            Add Task
-          </Button>
-                    </div>
-                </Form>
-                <TaskList />
+                        </Form.Label>
+                        <div className="form-field">
+                            <div className="auto">
+                                <Form.Control
+                                    type="text"
+                                    id="todo"
+                                    name="todo"
+                                    className="input"
+                                    value={this.state.value}
+                                    onChange={e => {
+                                        this.updateState(e, 'value');
+                                    }}>
+                                </Form.Control>
+                                <Button className="button" type="submit" >
+                                    Add Task
+                            </Button>
+                            </div>
+                        </div>
+                    </Form>
+                    <TaskList />
                 </Jumbotron>
             </div>
         );

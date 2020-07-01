@@ -2,32 +2,36 @@
     font-family: 'Oswald', sans-serif;
 }
 
-.app-title {
-    font-size: 60px;
-}
-
-.app-subtitle {
-    font-size: 30px;
-}
-
-.app-link {
-    margin: 10px;
-    font-size: 25px;
+#row {
+    margin: auto;
 }
 
 .card {
-    border: 1px solid #1dc4fd;
-    margin-top: 15px;
+    width: 80vw;
+}
+
+.news-image {
+    height: 30%;
+    width: 30%;
+    border: 10px solid #fcb045;
+    margin: auto;
+    margin-top: 10px;
 }
 
 .card-title {
-    font-size: 18px;
+    font-size: 28px;
 }
 
 .card-name {
-    font-size: 15px;
+    font-size: 20px;
 }
 
 .card-body {
-    font-size: 13px;
+    font-size: 20px;
 }
+
+@media only screen and (max-width: 414px) {
+    #row {
+      margin: auto;
+    }
+  }

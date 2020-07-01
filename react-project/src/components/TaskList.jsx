@@ -4,58 +4,45 @@ import './TaskList.css';
 import { connect } from 'react-redux';
 import { toggleTodo, deleteTodo } from '../redux/actions/todoactions';
 import { setVisibility } from '../redux/actions/visibilityActions';
-import Card from 'react-bootstrap/Card';
-import Button from 'react-bootstrap/Button'
 
 
 class TaskList extends Component {
     render() {
         return (
             <div className="task-display">
-                {/* <Button onClick={() => { this.props.setVisibility('incomplete') }}>Incomplete</Button>
-                <Button onClick={() => { this.props.setVisibility('complete') }}>Complete</Button> */}
-                <div>
-                    {/* {this.props.visibility === 'incomplete' && ( */}
-                        <>
-
-                            <h2 className="TaskList__title">Task List</h2>
-                            {this.props.tasks.map((task, i) => {
-                                if (!task.complete) {
-                                    return (
-                                        <Task
-                                            task={task}
-                                            key={i}
-                                            toggleCompleteStatus={() => {
-                                                this.props.toggleCompleteStatus(i);
-                                            }}
-                                            deleteTask={() => {
-                                                this.props.deleteTask(i);
-                                            }}
-                                        />
-                                    );
-                                }
-                                return '';
-                            })}
-                        </>
-                    {/* )} */}
+                <div className="incomplete">
+                    <h2>Task List</h2>
+                    {this.props.tasks.map((task, i) => {
+                        if (!task.complete) {
+                            return (
+                                <Task
+                                    task={task}
+                                    key={i}
+                                    toggleCompleteStatus={() => {
+                                        this.props.toggleCompleteStatus(i);
+                                    }}
+                                    deleteTask={() => {
+                                        this.props.deleteTask(i);
+                                    }}
+                                />
+                            );
+                        }
+                        return '';
+                    })}
                 </div>
-                <div>
-                    {/* {this.props.visibility === 'complete' && ( */}
-                        <>
-                            <h2 className="TaskList__title">Completed Tasks</h2>
-                            {this.props.tasks.map((task, i) => {
-                                if (task.complete) {
-                                    return (
-                                        <Task task={task} key={i}
-                                            toggleCompleteStatus={() => { this.props.toggleCompleteStatus(i); }}
-                                            deleteTask={() => { this.props.deleteTask(i); }}
-                                        />
-                                    );
-                                }
-                                return '';
-                            })}
-                        </>
-                    {/* // )} */}
+                <div className="complete">
+                    <h2 className="TaskList__title">Completed Tasks</h2>
+                    {this.props.tasks.map((task, i) => {
+                        if (task.complete) {
+                            return (
+                                <Task task={task} key={i}
+                                    toggleCompleteStatus={() => { this.props.toggleCompleteStatus(i); }}
+                                    deleteTask={() => { this.props.deleteTask(i); }}
+                                />
+                            );
+                        }
+                        return '';
+                    })}
                 </div>
             </div>
         )

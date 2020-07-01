@@ -8,7 +8,7 @@ export default function Home() {
     return (
         <div>
             <Jumbotron className="jumbo-background">
-  <h1 className="app-title">One Stop</h1>
+  <h1 className="app-title"><i>One_Stop</i></h1>
   <p className="app-subtitle">
     News, todos, and notes, all in one stop!
   </p>

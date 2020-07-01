@@ -17,4 +17,15 @@
 
 .task-display {
     display: flex;
+    margin: auto;
+}
+
+.incomplete {
+    margin: auto;
+    margin-top: 25px;
+}
+
+.complete { 
+    margin: auto;
+    margin-top: 25px;
 }
