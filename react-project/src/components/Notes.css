@@ -11,6 +11,10 @@
     flex-wrap: wrap;
 }
 
+.top-div {
+    display: flex;
+}
+
 .card {
     border: 1px solid #1dc4fd;
     margin-top: 10px;
@@ -20,28 +24,46 @@
     border: 1px solid #fcb045;
     width: 100%;
     height: 100%;
-    border-radius: 2px;
+    margin: 0px;
+    margin-bottom: 2px;
+    font-size: 25px;
+    font-weight: bold;
 }
 
 .title-container {
-    width: 60%;
+    width: 100%;
     margin: auto;
     border: none;
+    border-radius: '5px';
+    margin: '0';
 }
 
 .card-text {
     width: 100%;
     height: 100%;
+    font-size: 20px;
     margin: auto;
+    margin-top: 0px;
     border: 1px solid #fcb045;
+    border-radius: 5px;
 }
 
 .text-container {
     border: none;
 }
 
-.card-button {
+.card-button1 {
     color:#fcb045;
+    height: 45px;
+    width: 45%;
+    margin-left: 7px;
+}
+
+.card-button2 {
+    color:#fcb045;
+    height: 45px;
+    width: 45%;
+    margin-left: 5px;
 }
 
 @media only screen and (max-width: 414px) {

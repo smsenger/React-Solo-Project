@@ -5,6 +5,9 @@ import Jumbotron from 'react-bootstrap/Jumbotron';
 import { Link } from 'react-router-dom';
 import NoteCard from './NoteCard';
 import './Notes.css'
+import { Responsive, WidthProvider } from 'react-grid-layout';
+
+const ResponsiveGridLayout = WidthProvider(Responsive);
 
 export default class Notes extends Component {
     state = {
@@ -24,7 +27,7 @@ export default class Notes extends Component {
 
     createCard = () => {
         this.setState({
-            cards: [...this.state.cards, {title: '', note: ''}]
+            cards: [...this.state.cards, { title: '', note: '' }]
         })
     }
 
@@ -39,13 +42,20 @@ export default class Notes extends Component {
                         <Link className="app-link" to="/" variant="primary">Home</Link>
                         <Link className="app-link" to="/searchrequest" variant="primary">News</Link>
                         <Link className="app-link" to='/todoform' variant="primary">Todos</Link>
-                        <br/>
+                        <br />
                         <Button className="app-link" onClick={this.createCard}>Create note card</Button>
                     </p>
+                    <ResponsiveGridLayout className="layout"
+                        breakpoints={{lg: 1200, md: 996, sm: 768, xs: 480, xxs: 0}}
+                        cols={{lg: 6, md: 4, sm: 2, xs: 1, xxs: 1}}>
                         {this.state.cards.map((card, index) => {
                             return (
-                           <NoteCard handleCardSave={this.handleCardSave} data={card} id={index}/>
-                            )})}        
+                                <div data-grid={{ i: 'c', x: 4, y: 0, w: 1, h: 1 }} key={index} >
+                                    <NoteCard handleCardSave={this.handleCardSave} data={card} id={index}/>
+                                </div>
+                            )
+                        })}
+                    </ResponsiveGridLayout>
                 </Jumbotron>
 
             </div>

@@ -6,6 +6,8 @@ import TodoForm from './components/TodoForm';
 import TaskList from './components/TaskList';
 import Notes from './components/Notes'
 import './App.css';
+import 'react-grid-layout/css/styles.css';
+import 'react-resizable/css/styles.css';
 
 function App() {
   return (

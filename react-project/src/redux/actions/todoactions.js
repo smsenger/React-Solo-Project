@@ -19,3 +19,11 @@ export const deleteTodo = (index) => {
         index
     }
 }
+
+export const addNotes = (index, notes) => {
+    return {
+        type: 'ADD_NOTES',
+        index,
+        notes
+    }
+}

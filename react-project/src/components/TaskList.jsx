@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import Task from './Task';
 import './TaskList.css';
 import { connect } from 'react-redux';
-import { toggleTodo, deleteTodo } from '../redux/actions/todoactions';
+import { toggleTodo, deleteTodo, addNotes } from '../redux/actions/todoactions';
 import { setVisibility } from '../redux/actions/visibilityActions';
 
 
@@ -24,6 +24,10 @@ class TaskList extends Component {
                                     deleteTask={() => {
                                         this.props.deleteTask(i);
                                     }}
+                                    addNotes={(notes) => {
+                                        this.props.addNotes(i, notes);
+                                    }}
+                    
                                 />
                             );
                         }
@@ -38,6 +42,7 @@ class TaskList extends Component {
                                 <Task task={task} key={i}
                                     toggleCompleteStatus={() => { this.props.toggleCompleteStatus(i); }}
                                     deleteTask={() => { this.props.deleteTask(i); }}
+                                    addNotes={(notes) => { this.props.addNotes(i, notes); }}
                                 />
                             );
                         }
@@ -59,7 +64,8 @@ const mapStateToProps = (state) => {
 const mapDispatchToProps = {
     toggleCompleteStatus: toggleTodo,
     deleteTask: deleteTodo,
-    setVisibility: setVisibility
+    setVisibility: setVisibility,
+    addNotes: addNotes
 }
 
 export default connect(
