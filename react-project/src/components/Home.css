@@ -1,0 +1,21 @@
+.jumbo-background {
+    background: rgb(131,58,180);
+    background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(29,196,253,1) 50%, rgba(252,176,69,1) 100%);
+    border-radius: 0;
+    height: 100%;
+    min-height: 100vh;
+}
+
+.app-title {
+    font-size: 60px;
+}
+
+.app-subtitle {
+    font-size: 30px;
+}
+
+.app-link {
+    margin: 10px;
+    font-size: 25px;
+    color: #fcb045;
+}

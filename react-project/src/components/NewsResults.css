@@ -1,0 +1,37 @@
+* {
+    font-family: 'Oswald', sans-serif;
+}
+
+#row {
+    margin: auto;
+}
+
+.card {
+    width: 80vw;
+}
+
+.news-image {
+    height: 30%;
+    width: 30%;
+    border: 10px solid #fcb045;
+    margin: auto;
+    margin-top: 10px;
+}
+
+.card-title {
+    font-size: 28px;
+}
+
+.card-name {
+    font-size: 20px;
+}
+
+.card-body {
+    font-size: 20px;
+}
+
+@media only screen and (max-width: 414px) {
+    #row {
+      margin: auto;
+    }
+  }
