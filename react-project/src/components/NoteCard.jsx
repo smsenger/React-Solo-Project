@@ -12,7 +12,8 @@ export default class NoteCard extends Component {
 
         this.state = {
             title: '',
-            note: ''
+            note: '',
+            feedback: '',
         }
     }
 
