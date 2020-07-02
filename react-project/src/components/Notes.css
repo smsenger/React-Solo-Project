@@ -6,13 +6,22 @@
     min-height: 100vh;
 }
 
+.name-form {
+    width: 70%;
+    height: 40px;
+    float: left;
+    border-radius: 5px;
+    border: 1px solid #fcb045;
+}
+
 .card-div {
     display: flex;
     flex-wrap: wrap;
 }
 
-.top-div {
+.Button-div {
     display: flex;
+    margin: auto;
 }
 
 .card {
@@ -55,16 +64,26 @@
 .card-button1 {
     color:#fcb045;
     height: 45px;
-    width: 45%;
-    margin-left: 7px;
+    width: 30%;
+    text-align: center;
 }
 
 .card-button2 {
     color:#fcb045;
     height: 45px;
-    width: 45%;
+    width: 30%;
     margin-left: 5px;
+    text-align: center;
 }
+
+.card-button3 {
+    color:#fcb045;
+    height: 45px;
+    width: 30%;
+    margin-left: 5px;
+    text-align: center;
+}
+
 
 @media only screen and (max-width: 414px) {
     .card-div {
