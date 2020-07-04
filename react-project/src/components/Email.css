@@ -1,0 +1,26 @@
+.ui-form {
+    width: 80%;
+    margin: auto;
+}
+
+.name-form, 
+.email-form {
+    width: 50%;
+}
+
+.name-form {
+    border-radius: 0px;
+    border-top: 1px solid #fcb045;
+    border-right: 1px solid #fcb045;
+    border-bottom: 1px solid #fcb045;
+    border-left: 1px solid #fcb045;
+    resize: none;
+}
+
+.email-form {
+    height: 40px;
+    border-top: 1px solid #fcb045;
+    border-right: 1px solid #fcb045;
+    border-bottom: 1px solid #fcb045;
+    border-left: none;
+}

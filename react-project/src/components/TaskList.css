@@ -15,6 +15,10 @@
     font-size: 25px;
 }
 
+.TaskList__title {
+    color: #fcb045;
+}
+
 .task-display {
     display: flex;
     margin: auto;

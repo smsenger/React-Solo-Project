@@ -13,7 +13,9 @@
 .news-image {
     height: 30%;
     width: 30%;
-    border: 10px solid #fcb045;
+    border: 3px solid #fcb045;
+    box-shadow: 5px 10px#1dc4fd;
+    border-radius: 5px;
     margin: auto;
     margin-top: 10px;
 }

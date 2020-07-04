@@ -34,50 +34,51 @@ export default class Task extends Component {
     render() {
         const { task, toggleCompleteStatus, deleteTask, addNotes } = this.props;
         return (
-            <div className="Task" style={{ width: '355px' }}>
-                <div className={`Task__name ${task.complete ? 'is-complete' : ''}`}>
-                    {task.name}
-                </div>
-                <button
-                    onClick={toggleCompleteStatus}
-                    className="Task__button Task__button--toggle"
-                >
-                    {!task.complete ? (
-                        <span role="img" aria-label="Complete">
-                            ✔
-                        </span>
-                    ) : (
-                            <span role="img" aria-label="Incomplete">
-                                ❓
+                <div className="Task" style={{ width: '355px' }}>
+                    <div className={`Task__name ${task.complete ? 'is-complete' : ''}`}>
+                        {task.name}
+                    </div>
+                    <button
+                        onClick={toggleCompleteStatus}
+                        className="Task__button Task__button--toggle"
+                    >
+                        {!task.complete ? (
+                            <span role="img" aria-label="Complete">
+                                ✔
                             </span>
-                        )}
-                </button>
-                <button
-                    onClick={deleteTask}
-                    className="Task__button Task__button--delete"
-                >
-                    <span role="img" aria-label="Delete">
-                        ✖
+                        ) : (
+                                <span className="Undo__complete" style={{ marginBottom: '7px' }} role="img" aria-label="Incomplete">
+                                    👈
+                                </span>
+                            )}
+                    </button>
+                    <button
+                        onClick={deleteTask}
+                        className="Task__button Task__button--delete"
+                    >
+                        <span role="img" aria-label="Delete">
+                            ✖
                     </span>
-                </button>
+                    </button>
 
-                <div>
-                    <button onClick={this.showMenu}>📓</button>
-                    {
-                        this.state.showMenu
-                            ? (
-                                <div className="menu">
-                                    <textarea className="card-text" type="text" placeholder="Enter details here" id="notes" name="notes" onChange={this.handleChange} value={this.state.note}></textarea>
-                                    <Button className="card-button" onClick={() => {addNotes(this.state.notes)}}>Save</Button>
-                                </div>
-                            )
-                            : (
-                                null
-                            )
-                    }
+                    <div>
+                        <button className="Task__button Task__button3" onClick={this.showMenu}>📓</button>
+                        {
+                            this.state.showMenu
+                                ? (
+                                    <div className="menu">
+                                        <textarea className="card-text" type="text" placeholder="Enter details here" id="notes" name="notes" onChange={this.handleChange} value={this.state.note}></textarea>
+                                        <Button className="card-button" onClick={() => { addNotes(this.state.notes) }}>Save</Button>
+                                        <Button className="card-button" onClick={() => { deleteNote(this.state.notes) }}>Delete</Button>
+                                    </div>
+                                )
+                                : (
+                                    null
+                                )
+                        }
 
+                    </div>
                 </div>
-            </div>
         );
     }
 }
