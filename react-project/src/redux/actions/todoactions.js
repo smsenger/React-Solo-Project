@@ -27,3 +27,10 @@ export const addNotes = (index, notes) => {
         notes
     }
 }
+
+export const deleteNote = (index) => {
+    return {
+        type: 'DELETE_NOTE',
+        index
+    }
+}

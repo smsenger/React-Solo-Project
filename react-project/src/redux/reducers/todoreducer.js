@@ -61,6 +61,17 @@ function todoReducer(state = initialState, action) {
                 tasks: updateTasks
             }
 
+            case 'DELETE_NOTE':
+                const survivingNotes = state.notes.filter((note, index) => {
+                    if (index !== action.index) {
+                        return true;
+                    }
+                    return false;
+                })
+                return {
+                    ...state,
+                    notes: survivingNotes
+                }
 
         default:
             return state;

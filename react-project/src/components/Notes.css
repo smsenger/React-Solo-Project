@@ -60,7 +60,7 @@
 .text-container {
     border: none;
 }
-
+ 
 .card-button1 {
     color:#fcb045;
     height: 45px;
@@ -82,6 +82,12 @@
     width: 30%;
     margin-left: 5px;
     text-align: center;
+}
+
+.card-button3 {
+    height: 45px;
+    width: 30%;
+    margin-left: 5px;
 }
 
 

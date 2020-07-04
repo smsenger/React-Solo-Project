@@ -47,6 +47,7 @@ class SearchRequest extends Component {
             <Link className="app-link" to="/" variant="primary">Home</Link>
             <Link className="app-link" to='/todoform' variant="primary">Todos</Link>
             <Link className="app-link" to='/notes' variant="primary">Notes</Link>
+            <Link className="app-link" to='/email' variant="primary">Email</Link>
           </p>
           <Form onSubmit={this.handleSubmit}>
             <Form.Label className="search-title" htmlFor="search">News Search</Form.Label>

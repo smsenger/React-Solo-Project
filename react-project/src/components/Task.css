@@ -15,11 +15,18 @@
   font-size: 25px;
 }
 
+.task-div {
+  border-radius: 5px;
+}
+
 .Task {
     display: flex;
     background-color: #eee;
     padding: 6px;
     margin-bottom: 2px;
+    border: 1px solid #fcb045;
+    color: #1dc4fd;
+    border-radius: 5px;
   }
   
   .Task__name {
@@ -42,8 +49,22 @@
     background: 0;
   }
   
-  .Task__button span {
+  .Task__button span
+  .undo-complete span {
     line-height: 24px;
+  }
+
+  .Task__button {
+    margin-right: 5px;
+    margin-top: 3px;
+  }
+
+  .Task__button3 {
+    margin-top: 6px;
+  }
+
+  .Undo__complete {
+    margin-bottom: 5px;
   }
 
   
