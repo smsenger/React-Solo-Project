@@ -3,13 +3,20 @@
     margin: auto;
 }
 
+.app-subtitle {
+    color: white;
+}
+
 .name-form, 
 .email-form {
     width: 50%;
 }
 
 .name-form {
-    border-radius: 0px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
     border-top: 1px solid #fcb045;
     border-right: 1px solid #fcb045;
     border-bottom: 1px solid #fcb045;
@@ -23,4 +30,6 @@
     border-right: 1px solid #fcb045;
     border-bottom: 1px solid #fcb045;
     border-left: none;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
 }

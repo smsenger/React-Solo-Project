@@ -43,6 +43,7 @@ class SearchRequest extends Component {
       <div>
         <Jumbotron className="jumbo-background">
           <h1 className="app-title"><i>One_Stop</i> News</h1>
+          <p className="app-subtitle">Find relevant articles and summaries here!</p>
           <p>
             <Link className="app-link" to="/" variant="primary">Home</Link>
             <Link className="app-link" to='/todoform' variant="primary">Todos</Link>

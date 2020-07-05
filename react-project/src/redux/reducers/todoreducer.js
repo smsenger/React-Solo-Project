@@ -48,8 +48,8 @@ function todoReducer(state = initialState, action) {
                 ...state,
                 tasks: remainingTasks
             }
+
         case 'ADD_NOTES':
-            console.log('this')
             const updateTask = { ...state.tasks[action.index] }
             updateTask.notes = action.notes
             console.log(updateTask)
@@ -61,17 +61,8 @@ function todoReducer(state = initialState, action) {
                 tasks: updateTasks
             }
 
-            case 'DELETE_NOTE':
-                const survivingNotes = state.notes.filter((note, index) => {
-                    if (index !== action.index) {
-                        return true;
-                    }
-                    return false;
-                })
-                return {
-                    ...state,
-                    notes: survivingNotes
-                }
+            case 'GET_LOCAL_STORAGE':
+            return {...state, tasks: action.payload}   
 
         default:
             return state;

@@ -6,6 +6,17 @@
     min-height: 100vh;
 }
 
+.app-title {
+    font-size: 60px;
+    color: white;
+}
+
+.app-subtitle {
+    font-size: 30px;
+    color: white;
+}
+
+
 .name-form {
     width: 70%;
     height: 40px;
@@ -60,7 +71,13 @@
 .text-container {
     border: none;
 }
- 
+.emoji-input {
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+} 
+
 .card-button1 {
     color:#fcb045;
     height: 45px;
@@ -78,7 +95,7 @@
 
 .card-button3 {
     color:#fcb045;
-    height: 45px;
+    height: 40px;
     width: 30%;
     margin-left: 5px;
     text-align: center;
@@ -87,8 +104,19 @@
 .card-button3 {
     height: 45px;
     width: 30%;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.card-button4 {
+    color:#fcb045;
+    height: 45px;
+    width: 30%;
     margin-left: 5px;
 }
+
 
 
 @media only screen and (max-width: 414px) {

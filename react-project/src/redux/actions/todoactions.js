@@ -28,9 +28,6 @@ export const addNotes = (index, notes) => {
     }
 }
 
-export const deleteNote = (index) => {
-    return {
-        type: 'DELETE_NOTE',
-        index
-    }
+export function getLocalStorage(tasks) {
+    return {type: 'GET_LOCAL_STORAGE', payload: tasks}
 }

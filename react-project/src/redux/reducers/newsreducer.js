@@ -9,7 +9,7 @@ const initialState = {
 }
 
 export function newsReducer(state = initialState, action) {
-    switch(action.type) {
+    switch (action.type) {
         case UPDATE_ARTICLES:
             return {
                 ...state,
@@ -20,7 +20,7 @@ export function newsReducer(state = initialState, action) {
                 ...state,
                 pending: true
             }
-        case NEWS_API_SUCCESS: 
+        case NEWS_API_SUCCESS:
             return {
                 ...state,
                 pending: false,
@@ -32,6 +32,10 @@ export function newsReducer(state = initialState, action) {
                 pending: false,
                 error: action.error
             }
+
+        case 'GET_LOCAL_STORAGE':
+            return { ...state, articles: action.payload }
+
         default:
             return state;
     }

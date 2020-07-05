@@ -28,23 +28,25 @@ export default function Emoji() {
     return (
         <div style={{display: 'flex'}}>
                <textarea
-                 class="f4 fw7 dib pa2 no-underline ba b--black-20 w-100"
+                 className="f4 fw7 dib pa2 no-underline ba b--black-20 w-100 emoji-input"
                  value={message}
                  disabled
                  placeholder='😁'
+                 style={{backgroundColor: '#63d4fa', resize: 'none', height: '40px', marginTop:'-5px'}}
    
                > </textarea>
                <br></br>
                {emojiPicker}
                         <Button
-                            class="card-button3"
+                            className="card-button3"
                             onClick={triggerPicker}
+                            style={{height: '40px', marginTop:'-5px', marginLeft: '0px'}}
                         >  
                             <span role="img" aria-label="">
                                 😁
                             </span>
                         </Button>
-                        <div class="measure">
+                        <div className="measure">
           </div>
         </div>
     )

@@ -1,21 +1,14 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## One_Stop
+This application allows users to search for news articles, keep track of todo tasks, write notes, and send emails, all from one website. This eliminates the need to use multiple apps or websites to complete everyday tasks. Every portion of this app was designed with a wide variety of users in mind -- whether mobile or using a large screen, all features display in a functional and aesthetically pleasing way.
 
-## Available Scripts
 
-In the project directory, you can run:
+### News
 
-### `npm start`
+This feature allows the user to search via keyword for relevant news articles. Search results include an image, title, news source, and description. This is a great place to peruse articles and maintain awareness about the issues of the day. Because each article appears in a Bootstrap-react card, the content is completely responsive (see below).
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+### Todos
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+This feature
 
 ### `npm run build`
 

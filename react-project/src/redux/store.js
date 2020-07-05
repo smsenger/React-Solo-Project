@@ -1,12 +1,27 @@
 import { createStore, applyMiddleware } from 'redux';
 import rootReducer from './reducers/index';
-
-
-
+import { saveState } from './localStorage';
+import { loadState } from './localStorage';
+import throttle from 'lodash.throttle';
 
 
 const store = createStore(
-    rootReducer, 
-    window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__())  
+    rootReducer,
+    window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__())
+
+store.subscribe(() => {
+    saveState({
+        tasks: store.getState().tasks,
+        articles: store.getState().articles
+    });
+});
+
+store.subscribe(throttle(() => {
+    saveState({
+        tasks: store.getState().tasks,
+        articles: store.getState().articles
+    });
+}, 1000));
+
 
 export default store;
