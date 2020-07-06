@@ -27,21 +27,21 @@ export default class Email extends Component {
         e.preventDefault();
         // this.props.submitInfo();
         const template_params = {
-            "email": "email_value",
-            "title": "title_value",
-            "from_name": "from_name_value",
-            "note": "note_value"
+            "email": this.state.email,
+            "title": this.state.title,
+            "from_name": this.state.from_name,
+            "note": this.state.note
         }
         const user_id = 'user_0PcCX5oRy463TxqMRswTE';
         const service_id = "gmail";
         const template_id = "react_project";
-        emailjs.send(user_id, service_id, template_id, this.state, template_params)
-        // emailjs.send("gmail", "contact", this.state, template_params, template_id)
+        emailjs.send(service_id, template_id, template_params, user_id)
             .then(response => {
                 toast.success("Your message has been successfully sent!", {
                     position: toast.POSITION.BOTTOM_CENTER
                 });
                 console.log("SUCCESS!", response.status, response.text);
+                alert("Email sent successfully")
             },
             );
         this.setState({
