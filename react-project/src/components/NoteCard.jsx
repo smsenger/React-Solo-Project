@@ -34,9 +34,9 @@ class NoteCard extends PureComponent {
                 </Card.Text>
                 <div className="button-div">
                     <Emoji />
-                    <Button href={downloadData} target="_blank" download="data.txt" className='card-button2' onClick={this.textToFile}>Export</Button>
                     <Button className="card-button1" onClick={() => { this.props.updateCard(this.props.id, this.state.title, this.state.note) }}>Save</Button>
-                    <Button className="card-button4" onClick={() => { this.state.deleteCard(this.props.id) }}>Delete</Button>
+                    <Button href={downloadData} target="_blank" download="data.txt" className='card-button2' onClick={this.textToFile}>Export</Button>
+                    <Button className="card-button4" onClick={() => { this.props.deleteCard(this.props.id) }}>Delete</Button>
                 </div>
             </div >
 

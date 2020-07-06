@@ -17,8 +17,7 @@ export function notesReducer(state = initialState, action) {
             }
 
         case 'DELETE_CARD':
-            console.log(action)
-            const remainingCards = state.tasks.filter((cards, index) => {
+            const remainingCards = state.cards.filter((cards, index) => {
                 if (index !== action.index) {
                     return true;
                 }
@@ -30,7 +29,6 @@ export function notesReducer(state = initialState, action) {
             }
 
             case 'UPDATE_CARD':
-                console.log(action)
                 const updateCard = { ...state.cards[action.index] }
                 updateCard.title = action.title
                 updateCard.note = action.note

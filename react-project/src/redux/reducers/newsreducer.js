@@ -1,8 +1,11 @@
 import { NEWS_API_PENDING, UPDATE_ARTICLES } from '../actions/newsactions';
 import { NEWS_API_SUCCESS } from '../actions/newsactions';
 import { NEWS_API_ERROR } from '../actions/newsactions';
+import { loadState } from "../localStorage"
 
-const initialState = {
+const localState = loadState()
+
+const initialState = localState.newsState || {
     pending: false,
     articles: [],
     error: null

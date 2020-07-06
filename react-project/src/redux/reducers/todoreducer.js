@@ -1,12 +1,10 @@
-const initialState = {
-    tasks: [{
-        name: 'Add a task',
-        complete: false,
-        notes: ''
-    }],
+import { loadState } from "../localStorage"
+
+const localState = loadState()
+
+const initialState = localState.todoState || {
+    tasks: [],
 }
-
-
 
 function todoReducer(state = initialState, action) {
     switch (action.type) {
