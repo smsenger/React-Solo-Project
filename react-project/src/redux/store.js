@@ -10,18 +10,10 @@ const store = createStore(
     window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__())
 
 store.subscribe(() => {
-    saveState({
-        tasks: store.getState().tasks,
-        articles: store.getState().articles
-    });
+    saveState(store.getState());
 });
 
-store.subscribe(throttle(() => {
-    saveState({
-        tasks: store.getState().tasks,
-        articles: store.getState().articles
-    });
-}, 1000));
+
 
 
 export default store;
