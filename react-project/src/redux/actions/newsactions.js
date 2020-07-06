@@ -30,3 +30,7 @@ export const updateArticles = (articles) => {
         payload: articles
     }
 }
+
+export function getLocalStorage(articles) {
+    return {type: 'GET_LOCAL_STORAGE', payload: articles}
+}

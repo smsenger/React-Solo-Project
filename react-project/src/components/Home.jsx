@@ -59,10 +59,10 @@ export default class Home extends Component {
             <Link className="app-link" to="/searchrequest" variant="primary" ref={this.text4} value="clicca">News</Link>
             <Link className="app-link" to='/notes' variant="primary" ref={this.text5} value="clicca">Notes</Link>
             <Link className="app-link" to='/email' variant="primary" ref={this.text6} value="clicca">Email</Link>
-            <a type="button" onClick={this.colorChange} ref={this.text7} value="clicca">Change Design</a>
+            {/* <a type="button" className="app-link" style={{color: '#fcb045'}}onClick={this.colorChange} ref={this.text7} value="clicca">Change Design</a> */}
           </p>
 
-          <Form>
+          {/* <Form>
             <Form.Label htmlFor="todo" className="form-label" ref={this.text8} value="clicca">
               Sign In
           </Form.Label>
@@ -100,7 +100,7 @@ export default class Home extends Component {
               </Button>
               </div>
             </div>
-          </Form>
+          </Form> */}
         </Jumbotron>
       </div>
     )

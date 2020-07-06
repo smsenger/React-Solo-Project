@@ -33,12 +33,12 @@ export default class Email extends Component {
             "note": "note_value"
         }
         const user_id = 'user_0PcCX5oRy463TxqMRswTE';
-        const service_id = "default_service";
+        const service_id = "gmail";
         const template_id = "react_project";
-        emailjs.send(service_id, template_id, this.state, template_params, user_id)
+        emailjs.send(user_id, service_id, template_id, this.state, template_params)
         // emailjs.send("gmail", "contact", this.state, template_params, template_id)
             .then(response => {
-                toast.success("Your message has successfully sent!", {
+                toast.success("Your message has been successfully sent!", {
                     position: toast.POSITION.BOTTOM_CENTER
                 });
                 console.log("SUCCESS!", response.status, response.text);
@@ -64,7 +64,7 @@ export default class Email extends Component {
             <div>
                 <Jumbotron className="jumbo-background">
                     <h1 className="app-title"><i>One_Stop</i> Email</h1>
-                    <p>Send emails easily with EmailJS!</p>
+                    <p className="app-subtitle">Send emails easily with EmailJS!</p>
                     <p>
                         <Link className="app-link" to="/" variant="primary">Home</Link>
                         <Link className="app-link" to="/searchrequest" variant="primary">News</Link>
