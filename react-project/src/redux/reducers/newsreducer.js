@@ -5,7 +5,7 @@ import { loadState } from "../localStorage"
 
 const localState = loadState()
 
-const initialState = localState.newsState || {
+const initialState = localState ? localState.newsState : null || {
     pending: false,
     articles: [],
     error: null

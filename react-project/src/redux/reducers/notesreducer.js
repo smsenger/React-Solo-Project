@@ -2,7 +2,7 @@ import { loadState } from "../localStorage"
 
 const localState = loadState()
 
-const initialState = localState.notesState || {
+const initialState = localState? localState.notesState : null || {
     cards: [],
 }
 

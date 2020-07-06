@@ -16,38 +16,6 @@ class Notes extends Component {
         cards: [],
     }
 
-    handleCardSave = (id, data) => {
-        const newCards = [...this.state.cards]
-        newCards.splice(id, 1, data)
-        this.setState({
-            cards: newCards,
-        })
-        const newCardsJson = JSON.stringify(newCards)
-        localStorage.setItem('cards', newCardsJson)
-    }
-
-    componentDidMount() {
-        const newCardsJson = localStorage.getItem('cards');
-        const cards = JSON.parse(newCardsJson)
-        this.setState({ cards });
-      }
-
-    handleCardDelete = (index) => {
-        const survivingCards = this.state.cards.filter((index) => {
-            return index !== index 
-        })
-        this.setState ({
-            cards: survivingCards
-        })
-    }
-
-    createCard = () => {
-        this.setState({
-            cards: [...this.state.cards, { title: '', note: '' }]
-        })
-    }
-
-
 
     render() {
         return (

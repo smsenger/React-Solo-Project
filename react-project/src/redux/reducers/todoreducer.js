@@ -2,7 +2,7 @@ import { loadState } from "../localStorage"
 
 const localState = loadState()
 
-const initialState = localState.todoState || {
+const initialState = localState ? localState.todoState : null || {
     tasks: [],
 }
 
