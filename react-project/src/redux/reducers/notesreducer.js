@@ -21,7 +21,7 @@ export function notesReducer(state = initialState, action) {
                 if (index !== action.index) {
                     return true;
                 }
-                return false;
+                return false; 
             })
             return {
                 ...state,

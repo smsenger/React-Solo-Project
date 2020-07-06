@@ -15,7 +15,7 @@ export const deleteCard = (index) => {
 export const updateCard = (index, title, note) => {
     return {
         type: 'UPDATE_CARD',
-        index,
+        index, 
         title,
         note,
     }
