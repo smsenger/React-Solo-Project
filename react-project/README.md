@@ -1,4 +1,4 @@
-## One_Stop
+# One_Stop
 This React/Redux application allows users to search for news articles, keep track of todo tasks, write notes, and send emails, all from one website. This eliminates the need to use multiple apps or websites to complete everyday tasks. Every portion of this app was designed with a wide variety of users in mind -- whether mobile or using a large screen, all features display in a functional and aesthetically pleasing way.
 
 ![Home Page](https://i.ibb.co/f89pgQr/home.png) 
@@ -27,7 +27,7 @@ This feature allows the user to send emails via EmailJS. This helps the user avo
 
 ![Email](https://i.ibb.co/9b139B4/Screenshot-92.png)  
 
-## Minimum Viable Product
+### Minimum Viable Product
 
 The MVP for this project was to include the Todos, Notes, and News features. Adding additional features to Todos and News was an additional achievement, as was storing data in local storage through Redux.
 
