@@ -8,54 +8,20 @@ This feature allows the user to search via keyword for relevant news articles. S
 
 ### Todos
 
-This feature
+This feature allows the user to make a list of tasks to complete, move tasks to a "completed" list, delete them, or move them from the "completed" list to the original list. Todos also allows a user to note details for each task, which are stored in local storage along with all list items. The design of this feature includes fun emojis and sleek lines.
 
-### `npm run build`
+### Notes
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+The notes feature allows the user to take notes, save them to local storage, and export them as a txt file. The "dashboard" design of this feature allows the user to move note cards around on a larger screen. On smaller screens, note cards appear in column format.
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+### Email
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+This feature allows the user to send emails via EmailJS. This helps the user avoid having to move between different apps to achieve different goals.
 
-### `npm run eject`
+## Minimum Viable Product
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+The MVP for this project was to include the Todos, Notes, and News features. Adding additional features to Todos and News was an additional achievement.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Future Goals
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+To make this app truly useful for the busy professional, I would like to store user data in a database. This way, the he/she will be able to log in on any device and have access to content.
