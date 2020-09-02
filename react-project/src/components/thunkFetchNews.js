@@ -4,7 +4,7 @@ function fetchNews(e) {
   e.preventDefault()
   return dispatch => {
     dispatch(newsApiPending());
-    fetch(`http://newsapi.org/v2/everything?q=${this.state.search}&sortBy=publishedAt&apiKey=0771a8ddf997481c9b36598da32fcb6d`)
+    fetch(`http://newsapi.org/v2/everything?q=${this.state.search}&sortBy=publishedAt&apiKey=2a93b91867864809bc472f1ded214c3e`)
       .then(res => res.json())
       .then(res => {
         if (res.error) {
