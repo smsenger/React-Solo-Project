@@ -20,7 +20,7 @@ class SearchRequest extends Component {
 
   handleSubmit = (e) => {
     e.preventDefault()
-    fetch(`https://newsapi.org/v2/everything?q=${this.state.search}&sortBy=publishedAt&apiKey=2a93b91867864809bc472f1ded214c3e`)
+    fetch(`https://gnews.io/api/v3/${this.state.search}?token=4e4bb638622b8a18f3d2c52bf28f10f5`)
       .then(res => res.json())
       .then(data => {
         this.setState({
