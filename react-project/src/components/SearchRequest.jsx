@@ -20,7 +20,7 @@ class SearchRequest extends Component {
 
   handleSubmit = (e) => {
     e.preventDefault()
-    fetch(`http://newsapi.org/v2/everything?q=${this.state.search}&sortBy=publishedAt&apiKey=2a93b91867864809bc472f1ded214c3e`)
+    fetch(`https://newsapi.org/v2/everything?q=${this.state.search}&sortBy=publishedAt&apiKey=2a93b91867864809bc472f1ded214c3e`)
 
       .then(res => res.json())
       .then(data => {
