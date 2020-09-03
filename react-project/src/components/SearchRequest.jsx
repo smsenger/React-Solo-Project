@@ -20,7 +20,7 @@ class SearchRequest extends Component {
 
   handleSubmit = (e) => {
     e.preventDefault()
-    fetch(`https://yboss.yahooapis.com/ysearch/news?q=${this.state.search}`)
+    fetch(`http://yboss.yahooapis.com/ysearch/news?q=${this.state.search}`)
       .then(res => res.json())
       .then(data => {
         this.setState({
