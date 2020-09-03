@@ -20,7 +20,7 @@ class SearchRequest extends Component {
 
   handleSubmit = (e) => {
     e.preventDefault()
-    fetch(`https://gnews.io/api/v3/${this.state.search}?token=4e4bb638622b8a18f3d2c52bf28f10f5`)
+    fetch(`https://yboss.yahooapis.com/ysearch/news?q=${this.state.search}`)
       .then(res => res.json())
       .then(data => {
         this.setState({
