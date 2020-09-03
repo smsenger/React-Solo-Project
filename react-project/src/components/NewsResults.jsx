@@ -19,7 +19,7 @@ export default class SearchResults extends Component {
                     <Row className="rowMargins">
                         <Col md="auto" id="row">
                             <Card className="card" style={{ border: '2px solid #1dc4fd', marginTop: '25px' }}>
-                                <Card.Img variant="top" className="news-image" src={this.props.article.image} />
+                                <Card.Img variant="top" className="news-image" alt="article image" src={this.props.article.image} />
                                 <Card.Body>
                                     <Card.Title className="card-title" style={{ border: 'none' }}>{this.props.article.title}</Card.Title>
                                     <Card.Title className="card-name" style={{ border: 'none' }}>{this.props.article.source.name}</Card.Title>
