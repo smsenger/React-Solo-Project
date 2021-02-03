@@ -29,18 +29,18 @@ export default class SearchResults extends Component {
                                 {/* <Card.Img variant="top"    */}
                                     <ReactImageFallback
                                         src={this.props.article.image} 
-                                                                                    fallbackImage={newsImage}
-                                                                                    initialImage={newsImage}
-                                                                                    alt="News Image"
-                                                                                    className = "news-image"
-                                                                                    />
+                                        fallbackImage={newsImage}
+                                        initialImage={newsImage}
+                                        alt="News Image"
+                                        className = "news-image"
+                                    />
                                                                                     
                                                                             {/* /> */}
                                 <Card.Body>
                                     <Card.Title className="card-title" style={{ border: 'none' }}>{this.props.article.title}</Card.Title>
                                     <Card.Title className="card-name" style={{ border: 'none' }}>{this.props.article.source.name}</Card.Title>
                                     <Card.Text className="card-body" style={{ border: 'none' }}>{this.props.article.description}</Card.Text>
-                                    <Button className="card-body" style={{ border: 'none' }} type="submit" href={this.props.article.url}>Click here for full article</Button>
+                                    <Button className="card-body" style={{ border: 'none' }} type="submit" target="_blank" href={this.props.article.url}>Click here for full article</Button>
                                 </Card.Body>
                             </Card>
                         </Col>
