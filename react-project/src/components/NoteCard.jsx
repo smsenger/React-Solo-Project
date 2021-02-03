@@ -8,19 +8,19 @@ import { updateCard, deleteCard } from '../redux/actions/notesActions';
 
 class NoteCard extends PureComponent {
     constructor(props) {
-        super(props)
+        super(props);
 
 
         this.state = {
             title: props.cards[props.id].title,
             note: props.cards[props.id].note
-        }
+        };
     }
 
     handleChange = (e) => {
         const { name, value } = e.target;
         this.setState({
-            [name]: value 
+            [name]: value
         })
     }
 
@@ -39,7 +39,6 @@ class NoteCard extends PureComponent {
                     <Button className="card-button4" onClick={() => { this.props.deleteCard(this.props.id) }}>Delete</Button>
                 </div>
             </div >
-
         )
     }
 }

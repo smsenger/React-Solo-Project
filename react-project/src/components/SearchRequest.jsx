@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import NewsResults from './NewsResults'
-import { newsApiPending, newsApiSuccess, newsApiError, updateArticles } from '../redux/actions/newsactions';
+import { updateArticles } from '../redux/actions/newsactions';
 import { Link } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Form from 'react-bootstrap/Form';
@@ -26,7 +26,8 @@ class SearchRequest extends Component {
         this.setState({
           search: '',
         }, () => {
-          this.props.updateArticles(data.articles ? data.articles : [])
+          this.props.updateArticles(data.articles ? data.articles : []);
+
         })
       })
   }
