@@ -12,7 +12,7 @@
     "emoji-mart": "^3.0.0",
     "emoji-picker-react": "^3.2.1",
     "jquery": "^3.5.1",
-    "jquery-ui": "^1.12.1",
+    "jquery-ui": "^1.13.2",
     "local-storage": "^2.0.0",
     "lodash": "^4.17.19",
     "lodash.throttle": "^4.1.1",
